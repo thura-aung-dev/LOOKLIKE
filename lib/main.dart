@@ -56,12 +56,12 @@ class _MainScreenState extends State<MainScreen> {
         imageName = imageFeMaleNames[rng];
       });
       print(imageName);
-    }else{
+    }else  if (selectedGender == Status.other.toString()){
 rng = random.nextInt(imageOtherNames.length);
       setState(() {
         imageName = imageOtherNames[rng];
       });
-      print(imageName);
+      print("Reach"+imageName);
     }
   }
 
